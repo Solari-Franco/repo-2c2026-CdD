@@ -1,0 +1,975 @@
+﻿**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20260827113144
+Nombre de usuario: DESKTOP-0JLVQKF\chapa
+Usuario RunAs: DESKTOP-0JLVQKF\chapa
+Nombre de la configuración: 
+Máquina: DESKTOP-0JLVQKF (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Id. de proceso: 3284
+PSVersion: 5.1.26100.9168
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9168
+BuildVersion: 10.0.26100.9168
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+La transcripción ha comenzado. El archivo de salida es .\tareas\tarea01.txt
+PS C:\Users\chapa\econ-520\clases\tareas> pwd
+
+Path
+----
+C:\Users\chapa\econ-520\clases\tareas
+
+
+PS C:\Users\chapa\econ-520\clases\tareas> cd /
+PS C:\> pwd
+
+Path
+----
+C:\
+
+
+PS C:\> cd users
+PS C:\users> pwd
+
+Path
+----
+C:\users
+
+
+PS C:\users> cd ..
+PS C:\> pwd
+
+Path
+----
+C:\
+
+
+PS C:\> cd users/chapa/econ-520
+PS C:\users\chapa\econ-520> cd 
+PS C:\users\chapa\econ-520> cd ../../..
+PS C:\> pwd
+
+Path
+----
+C:\
+
+
+PS C:\> cd ../../econ-520
+cd : No se encuentra la ruta de acceso 'C:\econ-520' porque no existe.
+En línea: 1 Carácter: 1
++ cd ../../econ-520
++ ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\econ-520:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+cd : No se encuentra la ruta de acceso 'C:\econ-520' porque no existe.
+En línea: 1 Carácter: 1
++ cd ../../econ-520
++ ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\econ-520:String) [Se
+   t-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Comman
+   ds.SetLocationCommand
+
+PS C:\> cd users/chapa/econ-520/clases/tareas
+PS C:\users\chapa\econ-520\clases\tareas> pwd
+
+Path
+----
+C:\users\chapa\econ-520\clases\tareas
+
+
+PS C:\users\chapa\econ-520\clases\tareas> cd ~
+PS C:\Users\chapa> cd ..
+PS C:\Users> cd chapa/econ-520/clases/tareas
+PS C:\Users\chapa\econ-520\clases\tareas> pwd
+
+Path
+----
+C:\Users\chapa\econ-520\clases\tareas
+
+
+PS C:\Users\chapa\econ-520\clases\tareas> cd ~
+PS C:\Users\chapa> cd ~
+PS C:\Users\chapa> whoami
+
+PS C:\Users\chapa> cd ../..
+PS C:\> cd ~/econ-520/clases/tareas
+PS C:\Users\chapa\econ-520\clases\tareas> cd ~
+PS C:\Users\chapa> mkdir tmp/tutorial
+
+
+    Directorio: C:\Users\chapa\tmp
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     11:43                tutorial
+
+
+PS C:\Users\chapa> cd tmp/tutorial
+PS C:\Users\chapa\tmp\tutorial> mkdir dir1, dir2, dir3
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     11:43                dir1
+d-----         27/8/2026     11:43                dir2
+d-----         27/8/2026     11:43                dir3
+
+
+PS C:\Users\chapa\tmp\tutorial> ls
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     11:43                dir1
+d-----         27/8/2026     11:43                dir2
+d-----         27/8/2026     11:43                dir3
+
+
+PS C:\Users\chapa\tmp\tutorial> mkdir -p dir4/dir5/dir6
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial\dir4\dir5
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     11:48                dir6
+
+
+PS C:\Users\chapa\tmp\tutorial> ls
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     11:43                dir1
+d-----         27/8/2026     11:43                dir2
+d-----         27/8/2026     11:43                dir3
+d-----         27/8/2026     11:48                dir4
+
+
+PS C:\Users\chapa\tmp\tutorial> cd dir4
+PS C:\Users\chapa\tmp\tutorial\dir4> ls
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial\dir4
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     11:48                dir5
+
+
+PS C:\Users\chapa\tmp\tutorial\dir4> cd dir5
+PS C:\Users\chapa\tmp\tutorial\dir4\dir5> ls
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial\dir4\dir5
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     11:48                dir6
+
+
+PS C:\Users\chapa\tmp\tutorial\dir4\dir5> cd ../..
+PS C:\Users\chapa\tmp\tutorial> ls
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     11:43                dir1
+d-----         27/8/2026     11:43                dir2
+d-----         27/8/2026     11:43                dir3
+d-----         27/8/2026     11:48                dir4
+
+
+PS C:\Users\chapa\tmp\tutorial> mkdir "folder 1", "folder2", "folder3"
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     11:49                folder 1
+d-----         27/8/2026     11:49                folder2
+d-----         27/8/2026     11:49                folder3
+
+
+PS C:\Users\chapa\tmp\tutorial> mkdir -p "folder 6\folder 7"
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial\folder 6
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     11:50                folder 7
+
+
+PS C:\Users\chapa\tmp\tutorial> ls
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     11:43                dir1
+d-----         27/8/2026     11:43                dir2
+d-----         27/8/2026     11:43                dir3
+d-----         27/8/2026     11:48                dir4
+d-----         27/8/2026     11:49                folder 1
+d-----         27/8/2026     11:50                folder 6
+d-----         27/8/2026     11:49                folder2
+d-----         27/8/2026     11:49                folder3
+
+
+PS C:\Users\chapa\tmp\tutorial> cd folder 6
+>> ErrorTerminación(Set-Location): "No se encuentra ningún parámetro de posición que acepte el argumento '6'."
+Set-Location : No se encuentra ningún parámetro de posición que acepte el argumento '6'.
+En línea: 1 Carácter: 1
++ cd folder 6
++ ~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : No se encuentra ningún parámetro de posición que acepte
+el argumento '6'.
+En línea: 1 Carácter: 1
++ cd folder 6
++ ~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], Par
+   ameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.Po
+   werShell.Commands.SetLocationCommand
+
+PS C:\Users\chapa\tmp\tutorial> cd "folder 6"
+PS C:\Users\chapa\tmp\tutorial\folder 6> ls
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial\folder 6
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     11:50                folder 7
+
+
+PS C:\Users\chapa\tmp\tutorial\folder 6> cd ..
+PS C:\Users\chapa\tmp\tutorial> ls > output.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="dir1"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="dir2"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="dir3"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="dir4"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="folder 1"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="folder 6"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="folder2"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="folder3"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="output.txt"
+PS C:\Users\chapa\tmp\tutorial> cat output.txt
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     11:43                dir1
+d-----         27/8/2026     11:43                dir2
+d-----         27/8/2026     11:43                dir3
+d-----         27/8/2026     11:48                dir4
+d-----         27/8/2026     11:49                folder 1
+d-----         27/8/2026     11:50                folder 6
+d-----         27/8/2026     11:49                folder2
+d-----         27/8/2026     11:49                folder3
+-a----         27/8/2026     11:51              0 output.txt
+
+
+PS C:\Users\chapa\tmp\tutorial> cat
+>> ErrorTerminación(): "Se ha detenido la canalización."
+>> ErrorTerminación(): "Se ha detenido la canalización."
+PS C:\Users\chapa\tmp\tutorial> gci
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     11:43                dir1
+d-----         27/8/2026     11:43                dir2
+d-----         27/8/2026     11:43                dir3
+d-----         27/8/2026     11:48                dir4
+d-----         27/8/2026     11:49                folder 1
+d-----         27/8/2026     11:50                folder 6
+d-----         27/8/2026     11:49                folder2
+d-----         27/8/2026     11:49                folder3
+-a----         27/8/2026     11:51           1722 output.txt
+
+
+PS C:\Users\chapa\tmp\tutorial> echo "This is a test"
+This is a test
+PS C:\Users\chapa\tmp\tutorial> echo "This is a test" > test_1.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="This is a test"
+PS C:\Users\chapa\tmp\tutorial> echo "This is a second test" > test_2.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="This is a second test"
+PS C:\Users\chapa\tmp\tutorial> echo "This is a third test" > test_3.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="This is a third test"
+PS C:\Users\chapa\tmp\tutorial> ls
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     11:43                dir1
+d-----         27/8/2026     11:43                dir2
+d-----         27/8/2026     11:43                dir3
+d-----         27/8/2026     11:48                dir4
+d-----         27/8/2026     11:49                folder 1
+d-----         27/8/2026     11:50                folder 6
+d-----         27/8/2026     11:49                folder2
+d-----         27/8/2026     11:49                folder3
+-a----         27/8/2026     11:51           1722 output.txt
+-a----         27/8/2026     11:53             34 test_1.txt
+-a----         27/8/2026     11:54             48 test_2.txt
+-a----         27/8/2026     11:54             46 test_3.txt
+
+
+PS C:\Users\chapa\tmp\tutorial> cat test_1.txt test_2.txt test_3.txt
+>> ErrorTerminación(Get-Content): "No se encuentra ningún parámetro de posición que acepte el argumento 'test_2.txt'."
+Get-Content : No se encuentra ningún parámetro de posición que acepte el argumento 'test_2.txt'.
+En línea: 1 Carácter: 1
++ cat test_1.txt test_2.txt test_3.txt
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-Content], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : No se encuentra ningún parámetro de posición que acepte
+el argumento 'test_2.txt'.
+En línea: 1 Carácter: 1
++ cat test_1.txt test_2.txt test_3.txt
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-Content], Para
+   meterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.Po
+   werShell.Commands.GetContentCommand
+
+PS C:\Users\chapa\tmp\tutorial> cat test_1.txt, test_2.txt, test_3.txt
+This is a test
+This is a second test
+This is a third test
+PS C:\Users\chapa\tmp\tutorial> cat t*
+This is a test
+This is a second test
+This is a third test
+PS C:\Users\chapa\tmp\tutorial> cat t* > combined.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="This is a test"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="This is a second test"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="This is a third test"
+PS C:\Users\chapa\tmp\tutorial> cat combined.txt
+This is a test
+This is a second test
+This is a third test
+PS C:\Users\chapa\tmp\tutorial> cat t* > combined.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="This is a test"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="This is a second test"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="This is a third test"
+PS C:\Users\chapa\tmp\tutorial> cat t* > combined.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="This is a test"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="This is a second test"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="This is a third test"
+PS C:\Users\chapa\tmp\tutorial> cat combined.txt
+This is a test
+This is a second test
+This is a third test
+PS C:\Users\chapa\tmp\tutorial> cat t* >> combined.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="This is a test"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="This is a second test"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="This is a third test"
+PS C:\Users\chapa\tmp\tutorial> echo "I've appended a line!" >> combined.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="I've appended a line!"
+PS C:\Users\chapa\tmp\tutorial> cat combined.txt
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+I've appended a line!
+PS C:\Users\chapa\tmp\tutorial> echo "Lower case" > a.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Lower case"
+PS C:\Users\chapa\tmp\tutorial> echo "Upper case" > A.TXT
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Upper case"
+PS C:\Users\chapa\tmp\tutorial> echo "Mixed case" > A.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Mixed case"
+PS C:\Users\chapa\tmp\tutorial> ls
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     11:43                dir1
+d-----         27/8/2026     11:43                dir2
+d-----         27/8/2026     11:43                dir3
+d-----         27/8/2026     11:48                dir4
+d-----         27/8/2026     11:49                folder 1
+d-----         27/8/2026     11:50                folder 6
+d-----         27/8/2026     11:49                folder2
+d-----         27/8/2026     11:49                folder3
+-a----         27/8/2026     12:04             26 a.txt
+-a----         27/8/2026     11:55            292 combined.txt
+-a----         27/8/2026     11:51           1722 output.txt
+-a----         27/8/2026     11:53             34 test_1.txt
+-a----         27/8/2026     11:54             48 test_2.txt
+-a----         27/8/2026     11:54             46 test_3.txt
+
+
+PS C:\Users\chapa\tmp\tutorial> mv combined.txt dir1
+PS C:\Users\chapa\tmp\tutorial> cd dir1
+PS C:\Users\chapa\tmp\tutorial\dir1> ls
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial\dir1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         27/8/2026     11:55            292 combined.txt
+
+
+PS C:\Users\chapa\tmp\tutorial\dir1> cd ..
+PS C:\Users\chapa\tmp\tutorial> ls dir1
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial\dir1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         27/8/2026     11:55            292 combined.txt
+
+
+PS C:\Users\chapa\tmp\tutorial> mv dir1/* .
+PS C:\Users\chapa\tmp\tutorial> ls
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     12:04                dir1
+d-----         27/8/2026     11:43                dir2
+d-----         27/8/2026     11:43                dir3
+d-----         27/8/2026     11:48                dir4
+d-----         27/8/2026     11:49                folder 1
+d-----         27/8/2026     11:50                folder 6
+d-----         27/8/2026     11:49                folder2
+d-----         27/8/2026     11:49                folder3
+-a----         27/8/2026     12:04             26 a.txt
+-a----         27/8/2026     11:55            292 combined.txt
+-a----         27/8/2026     11:51           1722 output.txt
+-a----         27/8/2026     11:53             34 test_1.txt
+-a----         27/8/2026     11:54             48 test_2.txt
+-a----         27/8/2026     11:54             46 test_3.txt
+
+
+PS C:\Users\chapa\tmp\tutorial> mv dir1/* .
+PS C:\Users\chapa\tmp\tutorial> ls dir1
+PS C:\Users\chapa\tmp\tutorial> # Versión corta (si sabes exactamente qué es cada cosa)
+PS C:\Users\chapa\tmp\tutorial> mv combined.txt, test_*, dir3 -Destination dir2
+PS C:\Users\chapa\tmp\tutorial> ls dir2
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial\dir2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     11:43                dir3
+-a----         27/8/2026     11:55            292 combined.txt
+-a----         27/8/2026     11:53             34 test_1.txt
+-a----         27/8/2026     11:54             48 test_2.txt
+-a----         27/8/2026     11:54             46 test_3.txt
+
+
+PS C:\Users\chapa\tmp\tutorial> Move-Item dir2/combined.txt dir4/dir5/dir6
+PS C:\Users\chapa\tmp\tutorial> ls dir6
+ls : No se encuentra la ruta de acceso 'C:\Users\chapa\tmp\tutorial\dir6' porque no existe.
+En línea: 1 Carácter: 1
++ ls dir6
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\chapa\tmp\tutorial\dir6:String) [Get-ChildItem], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+ls : No se encuentra la ruta de acceso
+'C:\Users\chapa\tmp\tutorial\dir6' porque no existe.
+En línea: 1 Carácter: 1
++ ls dir6
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\chapa\tmp\tuto
+   rial\dir6:String) [Get-ChildItem], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Comman
+   ds.GetChildItemCommand
+
+PS C:\Users\chapa\tmp\tutorial> cd dir4/dir5
+PS C:\Users\chapa\tmp\tutorial\dir4\dir5> ls
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial\dir4\dir5
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     12:09                dir6
+
+
+PS C:\Users\chapa\tmp\tutorial\dir4\dir5> ls dir6
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial\dir4\dir5\dir6
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         27/8/2026     11:55            292 combined.txt
+
+
+PS C:\Users\chapa\tmp\tutorial\dir4\dir5> cd ../..
+PS C:\Users\chapa\tmp\tutorial> ls dir2
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial\dir2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     11:43                dir3
+-a----         27/8/2026     11:53             34 test_1.txt
+-a----         27/8/2026     11:54             48 test_2.txt
+-a----         27/8/2026     11:54             46 test_3.txt
+
+
+PS C:\Users\chapa\tmp\tutorial> Copy-Item dir4/dir5/dir6/combined.txt .
+PS C:\Users\chapa\tmp\tutorial> ls dir4/dir5/dir6
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial\dir4\dir5\dir6
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         27/8/2026     11:55            292 combined.txt
+
+
+PS C:\Users\chapa\tmp\tutorial> ls
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     12:05                dir1
+d-----         27/8/2026     12:09                dir2
+d-----         27/8/2026     11:48                dir4
+d-----         27/8/2026     11:49                folder 1
+d-----         27/8/2026     11:50                folder 6
+d-----         27/8/2026     11:49                folder2
+d-----         27/8/2026     11:49                folder3
+-a----         27/8/2026     12:04             26 a.txt
+-a----         27/8/2026     11:55            292 combined.txt
+-a----         27/8/2026     11:51           1722 output.txt
+
+
+PS C:\Users\chapa\tmp\tutorial> cp combined.txt backup_combined.txt
+PS C:\Users\chapa\tmp\tutorial> ls
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     12:05                dir1
+d-----         27/8/2026     12:09                dir2
+d-----         27/8/2026     11:48                dir4
+d-----         27/8/2026     11:49                folder 1
+d-----         27/8/2026     11:50                folder 6
+d-----         27/8/2026     11:49                folder2
+d-----         27/8/2026     11:49                folder3
+-a----         27/8/2026     12:04             26 a.txt
+-a----         27/8/2026     11:55            292 backup_combined.txt
+-a----         27/8/2026     11:55            292 combined.txt
+-a----         27/8/2026     11:51           1722 output.txt
+
+
+PS C:\Users\chapa\tmp\tutorial> mv backup_combined.txt combined_backup.txt
+PS C:\Users\chapa\tmp\tutorial> ls
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     12:05                dir1
+d-----         27/8/2026     12:09                dir2
+d-----         27/8/2026     11:48                dir4
+d-----         27/8/2026     11:49                folder 1
+d-----         27/8/2026     11:50                folder 6
+d-----         27/8/2026     11:49                folder2
+d-----         27/8/2026     11:49                folder3
+-a----         27/8/2026     12:04             26 a.txt
+-a----         27/8/2026     11:55            292 combined.txt
+-a----         27/8/2026     11:55            292 combined_backup.txt
+-a----         27/8/2026     11:51           1722 output.txt
+
+
+PS C:\Users\chapa\tmp\tutorial> mv "folder 1" folder_1
+PS C:\Users\chapa\tmp\tutorial> ls
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     12:05                dir1
+d-----         27/8/2026     12:09                dir2
+d-----         27/8/2026     11:48                dir4
+d-----         27/8/2026     11:50                folder 6
+d-----         27/8/2026     11:49                folder2
+d-----         27/8/2026     11:49                folder3
+d-----         27/8/2026     11:49                folder_1
+-a----         27/8/2026     12:04             26 a.txt
+-a----         27/8/2026     11:55            292 combined.txt
+-a----         27/8/2026     11:55            292 combined_backup.txt
+-a----         27/8/2026     11:51           1722 output.txt
+
+
+PS C:\Users\chapa\tmp\tutorial> mv "folder 6" carpeta6
+PS C:\Users\chapa\tmp\tutorial> ls
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     11:50                carpeta6
+d-----         27/8/2026     12:05                dir1
+d-----         27/8/2026     12:09                dir2
+d-----         27/8/2026     11:48                dir4
+d-----         27/8/2026     11:49                folder2
+d-----         27/8/2026     11:49                folder3
+d-----         27/8/2026     11:49                folder_1
+-a----         27/8/2026     12:04             26 a.txt
+-a----         27/8/2026     11:55            292 combined.txt
+-a----         27/8/2026     11:55            292 combined_backup.txt
+-a----         27/8/2026     11:51           1722 output.txt
+
+
+PS C:\Users\chapa\tmp\tutorial> mv "folder 2" folder_2
+mv : No se encuentra la ruta de acceso 'C:\Users\chapa\tmp\tutorial\folder 2' porque no existe.
+En línea: 1 Carácter: 1
++ mv "folder 2" folder_2
++ ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\chapa\tmp\tutorial\folder 2:String) [Move-Item], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+mv : No se encuentra la ruta de acceso
+'C:\Users\chapa\tmp\tutorial\folder 2' porque no existe.
+En línea: 1 Carácter: 1
++ mv "folder 2" folder_2
++ ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\chapa\tmp\tuto
+   rial\folder 2:String) [Move-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Comman
+   ds.MoveItemCommand
+
+PS C:\Users\chapa\tmp\tutorial> mv "folder2" folder_2
+PS C:\Users\chapa\tmp\tutorial> mv "folder3" folder_3
+PS C:\Users\chapa\tmp\tutorial> ls
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     11:50                carpeta6
+d-----         27/8/2026     12:05                dir1
+d-----         27/8/2026     12:09                dir2
+d-----         27/8/2026     11:48                dir4
+d-----         27/8/2026     11:49                folder_1
+d-----         27/8/2026     11:49                folder_2
+d-----         27/8/2026     11:49                folder_3
+-a----         27/8/2026     12:04             26 a.txt
+-a----         27/8/2026     11:55            292 combined.txt
+-a----         27/8/2026     11:55            292 combined_backup.txt
+-a----         27/8/2026     11:51           1722 output.txt
+
+
+PS C:\Users\chapa\tmp\tutorial> rm dir4/dir5/dir6/combined.txt combined_backup.txt
+>> ErrorTerminación(Remove-Item): "No se encuentra ningún parámetro de posición que acepte el argumento 'combined_backup.txt'."
+Remove-Item : No se encuentra ningún parámetro de posición que acepte el argumento 'combined_backup.txt'.
+En línea: 1 Carácter: 1
++ rm dir4/dir5/dir6/combined.txt combined_backup.txt
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Remove-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : No se encuentra ningún parámetro de posición que acepte
+el argumento 'combined_backup.txt'.
+En línea: 1 Carácter: 1
++ rm dir4/dir5/dir6/combined.txt combined_backup.txt
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Remove-Item], Para
+   meterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.Po
+   werShell.Commands.RemoveItemCommand
+
+PS C:\Users\chapa\tmp\tutorial> rm dir4/dir5/dir6/combined.txt
+PS C:\Users\chapa\tmp\tutorial> ls dir4/dir5/dir6
+PS C:\Users\chapa\tmp\tutorial> rmdir fol*
+PS C:\Users\chapa\tmp\tutorial> rmdir car*
+Confirmar
+El elemento situado en C:\Users\chapa\tmp\tutorial\carpeta6 tiene elementos secundarios y no se especificó el parámetro Recurse. Si continúa, se quitarán todos los secundarios junto con el elemento. ¿Está seguro de que desea continuar?
+&Sí  Sí a t&odo  &No  No a &todo  S&uspender
+N
+PS C:\Users\chapa\tmp\tutorial> rm -r folder_6
+rm : No se encuentra la ruta de acceso 'C:\Users\chapa\tmp\tutorial\folder_6' porque no existe.
+En línea: 1 Carácter: 1
++ rm -r folder_6
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\chapa\tmp\tutorial\folder_6:String) [Remove-Item], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+rm : No se encuentra la ruta de acceso
+'C:\Users\chapa\tmp\tutorial\folder_6' porque no existe.
+En línea: 1 Carácter: 1
++ rm -r folder_6
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\chapa\tmp\tuto
+   rial\folder_6:String) [Remove-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Comman
+   ds.RemoveItemCommand
+
+PS C:\Users\chapa\tmp\tutorial> rm -r carpeta6
+PS C:\Users\chapa\tmp\tutorial> ls
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     12:05                dir1
+d-----         27/8/2026     12:09                dir2
+d-----         27/8/2026     11:48                dir4
+-a----         27/8/2026     12:04             26 a.txt
+-a----         27/8/2026     11:55            292 combined.txt
+-a----         27/8/2026     11:55            292 combined_backup.txt
+-a----         27/8/2026     11:51           1722 output.txt
+
+
+PS C:\Users\chapa\tmp\tutorial> rm combined_backup.txt, a.txt
+PS C:\Users\chapa\tmp\tutorial> ls
+
+
+    Directorio: C:\Users\chapa\tmp\tutorial
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     12:05                dir1
+d-----         27/8/2026     12:09                dir2
+d-----         27/8/2026     11:48                dir4
+-a----         27/8/2026     11:55            292 combined.txt
+-a----         27/8/2026     11:51           1722 output.txt
+
+
+PS C:\Users\chapa\tmp\tutorial> wc -l combined.txt
+wc : El término 'wc' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable. 
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e 
+inténtelo de nuevo.
+En línea: 1 Carácter: 1
++ wc -l combined.txt
++ ~~
+    + CategoryInfo          : ObjectNotFound: (wc:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+wc : El término 'wc' no se reconoce como nombre de un cmdlet, función,
+archivo de script o programa ejecutable. Compruebe si escribió
+correctamente el nombre o, si incluyó una ruta de acceso, compruebe
+que dicha ruta es correcta e inténtelo de nuevo.
+En línea: 1 Carácter: 1
++ wc -l combined.txt
++ ~~
+    + CategoryInfo          : ObjectNotFound: (wc:String) [], CommandN
+   otFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\chapa\tmp\tutorial> Get-Content combined.txt | Measure-Object -Line
+
+Lines Words Characters Property
+----- ----- ---------- --------
+    7
+
+
+PS C:\Users\chapa\tmp\tutorial> gc combined.txt | Measure-Object -Line
+
+Lines Words Characters Property
+----- ----- ---------- --------
+    7
+
+
+PS C:\Users\chapa\tmp\tutorial> Get-ChildItem ~ | Out-File file_list.txt
+PS C:\Users\chapa\tmp\tutorial> (Get-Content file_list.txt | Measure-Object -Line).Lines
+23
+PS C:\Users\chapa\tmp\tutorial> Remove-Item file_list.txt
+PS C:\Users\chapa\tmp\tutorial> ls ~ > file_list.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor=".ms-ad"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="3D Objects"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Contacts"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="directorio-pruebas"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Documents"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Downloads"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="E.520"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="E520"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="econ-520"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Favorites"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Links"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Music"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="OneDrive"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Saved Games"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Searches"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="tmp"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Videos"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor=".bash_history"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor=".gitconfig"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor=".lesshst"
+PS C:\Users\chapa\tmp\tutorial> (Get-Content file_list.txt | Measure-Object -Line).Lines
+23
+PS C:\Users\chapa\tmp\tutorial> Remove-Item file_list.txt
+PS C:\Users\chapa\tmp\tutorial> (ls ~ | Measure-Object -Line).Lines
+20
+PS C:\Users\chapa\tmp\tutorial> cd ../..
+PS C:\Users\chapa>  Get-ChildItem ~ | Out-File file_list.txt
+PS C:\Users\chapa> (Get-Content file_list.txt | Measure-Object -Line).Lines
+24
+PS C:\Users\chapa> Remove-Item file_list.txt
+PS C:\Users\chapa> ls ~ | Measure-Object -Line
+
+Lines Words Characters Property
+----- ----- ---------- --------
+   20
+
+
+PS C:\Users\chapa> cd tmp/tutorial
+PS C:\Users\chapa\tmp\tutorial> cd ..
+PS C:\Users\chapa\tmp> ls /tutorial | Measure-Object -Line
+ls : No se encuentra la ruta de acceso 'C:\tutorial' porque no existe.
+En línea: 1 Carácter: 1
++ ls /tutorial | Measure-Object -Line
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\tutorial:String) [Get-ChildItem], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+ls : No se encuentra la ruta de acceso 'C:\tutorial' porque no existe.
+En línea: 1 Carácter: 1
++ ls /tutorial | Measure-Object -Line
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\tutorial:String) [Ge
+   t-ChildItem], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Comman
+   ds.GetChildItemCommand
+
+
+Lines Words Characters Property
+----- ----- ---------- --------
+    0
+
+
+PS C:\Users\chapa\tmp> cd
+PS C:\Users\chapa\tmp> cd ..
+PS C:\Users\chapa> ls /tmp | Measure-Object -Line
+
+Lines Words Characters Property
+----- ----- ---------- --------
+    1
+
+
+PS C:\Users\chapa> cd tmp/tutorial
+PS C:\Users\chapa\tmp\tutorial> gc combined.txt | Sort-Object -Unique | Measure-Object -Line
+
+Lines Words Characters Property
+----- ----- ---------- --------
+    4
+
+
+PS C:\Users\chapa\tmp\tutorial> gc combined.txt
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+I've appended a line!
+PS C:\Users\chapa\tmp\tutorial> gc combined.txt | Measure-Object -Line
+
+Lines Words Characters Property
+----- ----- ---------- --------
+    7
+
+
+PS C:\Users\chapa\tmp\tutorial> (gc combined.txt | Group-Object | Where-Object { $_.Count -gt 1 } | Measure-Object -Line).Lines
+3
+PS C:\Users\chapa\tmp\tutorial> help unique
+
+PS C:\Users\chapa\tmp\tutorial> help Sort-Object
+
+PS C:\Users\chapa\tmp\tutorial> stop-transcipt
+stop-transcipt : El término 'stop-transcipt' no se reconoce como nombre de un cmdlet, función, archivo de script o 
+programa ejecutable. Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que 
+dicha ruta es correcta e inténtelo de nuevo.
+En línea: 1 Carácter: 1
++ stop-transcipt
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (stop-transcipt:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+stop-transcipt : El término 'stop-transcipt' no se reconoce como
+nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta
+de acceso, compruebe que dicha ruta es correcta e inténtelo de nuevo.
+En línea: 1 Carácter: 1
++ stop-transcipt
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (stop-transcipt:String)
+   [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\chapa\tmp\tutorial> Stop-Transcript 
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20260827124031
+**********************
